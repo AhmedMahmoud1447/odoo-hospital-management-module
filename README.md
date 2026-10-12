@@ -1,10 +1,10 @@
-# 🏥 Hospital Management System - Custom Odoo 17 Module
+#  Hospital Management System - Custom Odoo 17 Module
 
 A comprehensive, fully custom **Odoo 17** module designed to streamline and automate hospital operations, patient management, doctor schedules, and consultation billing workflows.
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
 - **Patient Management:**
   - Complete patient profile handling (Contact Info, Age, Gender, Medical Notes).
