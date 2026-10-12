@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hospital_appointment_form" model="ir.ui.view">
+        <record name="name">hospital.appointment.form</record>
+        <record name="model">hospital.appointment</record>
+        <record name="arch" type="xml">
+            <form string="Appointment">
+                <header>
+                    <button name="action_confirm" string="Confirm &amp; Create Invoice" type="object" class="oe_highlight" states="draft"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="patient_id"/>
+                            <field name="doctor_id"/>
+                        </group>
+                        <group>
+                            <field name="appointment_date"/>
+                            <field name="invoice_id" attrs="{'invisible': [('invoice_id', '=', False)]}"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </record>
+    </record>
+
+    <!-- Window Action -->
+    <record id="action_hospital_appointment" model="ir.actions.act_window">
+        <record name="name">Appointments</record>
+        <record name="res_model">hospital.appointment</record>
+        <record name="view_mode">tree,form</record>
+    </record>
+</odoo>

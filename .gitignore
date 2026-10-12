@@ -1,0 +1,7 @@
+# Python & Odoo Cache
+__pycache__/
+*.pyc
+.DS_Store
+
+# Docker volumes and data 
+.env
