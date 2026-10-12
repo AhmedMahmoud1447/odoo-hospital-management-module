@@ -26,7 +26,7 @@ A custom **Odoo 17** module designed to streamline and automate hospital operati
 
 ## 🛠️ Tech Stack & Architecture
 
-- **ERP Platform:** Odoo 17 (Community / Enterprise)
+- **ERP Platform:** Odoo 17 (Community)
 - **Programming Language:** Python 3.10+
 - **Backend Database:** PostgreSQL
 - **Frontend / UI:** Odoo XML Architecture (Form, Tree, and Search Views)
